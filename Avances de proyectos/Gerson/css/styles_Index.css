@@ -1,0 +1,51 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #807e84;
+    --primario: #12b22a;
+    --secundario: yellow;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;/* 1rem = 10px*/
+}
+
+.titulo {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.titulo span {
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: var(--primario);
+}
+
+nav {
+    text-align: center;
+    background-color: var(--oscuro);
+}
+
+main {
+    text-align: center;
+    background-color: var(--blanco);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primario);
+}
