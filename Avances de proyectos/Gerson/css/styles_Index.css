@@ -1,8 +1,8 @@
 :root {
     --blanco: #ffffff;
-    --oscuro: #807e84;
+    --azul: #216e97;
     --primario: #12b22a;
-    --secundario: yellow;
+    --secundario: #edcb09;
 }
 
 html{
@@ -19,33 +19,53 @@ body{
     font-style: normal;
     text-align: center;
     font-size: 3.8rem;
+    background-color: var(--primario);
+    margin: 1rem auto;
 }
 
 .titulo span {
     font-size: 4rem;
 }
 
-h2 {
+.titulo2 {
     font-family: "Rubik Glitch", system-ui;
     font-weight: 400;
     font-style: normal;
 }
 
-header {
-    background-color: var(--primario);
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
 }
 
-nav {
-    text-align: center;
-    background-color: var(--oscuro);
+.nav-bg {
+    background-color: var(--azul);
 }
 
-main {
-    text-align: center;
-    background-color: var(--blanco);
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+    
 }
 
-footer {
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.navegacion-principal a {
+    display: block;
     text-align: center;
-    background-color: var(--primario);
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--secundario);
+    color: black;
 }
