@@ -32,11 +32,15 @@ body{
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    border: none;
 }
 @media (min-width: 480px) {
     .boton {
         width: auto;
     }
+}
+.boton:hover {
+    cursor: pointer;
 }
 
 .sombra {
@@ -82,8 +86,24 @@ h1,h2,h3 {
 }
 
 .contenedor {
-    max-width: 120rem;
+    max-width: 100rem;
     margin: 0 auto;
+}
+
+/* Utilidades */
+.w-100 {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .w-100 {
+        width: auto;
+    }
+}
+.flex {
+    display: flex;
+}
+.alinear-derecha {
+    justify-content: flex-start;
 }
 
 /* Navegacion principal */
@@ -146,3 +166,45 @@ h1,h2,h3 {
     color: var(--blanco);
 }
 
+/* Contacto */
+.formulario {
+    background-color: gray;
+    width: min( 60 rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: rgb(3, 81, 3);
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+.campo label {
+    color: black;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.footer {
+    text-align: center;
+}

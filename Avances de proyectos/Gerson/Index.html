@@ -18,7 +18,7 @@
   </head>
   <body>
     <header>
-      <h1 class="titulo">Torne<span>On</span></h1>
+      <h1 class="titulo">Torne<span>ON</span></h1>
     </header>
 
     <div class="nav-bg">
@@ -29,11 +29,12 @@
         <a href="#">Blog</a>
         <a href="#">Contacto</a>
       </nav>
-    </div><!-- .nav-bg -->
+    </div>
+    <!-- .nav-bg -->
 
     <section class="balones">
       <div class="contenido-esquina">
-        <h2>Categoria Libre</h2>
+        <h2 class="titulo2">Categoria Libre</h2>
         <p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -56,9 +57,10 @@
         </p>
         <a class="boton" href="#">Contactar</a>
       </div><!-- .contenido-esquina -->
+      
     </section>
 
-    <main class="contenedor sombra">
+    <main class="noticias contenedor sombra">
       <h2 class="titulo2">Noticias</h2>
       <p>Tienes un equipo pero no tienes donde jugar?<br /></p>
       <p>Quieres tener mayor contacto con los campos?<br /></p>
@@ -68,14 +70,49 @@
         para ayudarte a tener una mejor<br />
       </p>
       <p>gestion de tu equipo, <br /></p>
+
+      <section>
+        <h2 class="titulo2">Registrate</h2>
+
+        <form class="formulario">
+          <fieldset>
+            <legend>Contactanos llenando todos los campos</legend>
+            <div class="campos">
+              <div class="campo">
+                <label>Nombre</label>
+                <input class="input-text" type="text" placeholder="Del Equipo" />
+              </div>
+
+              <div class="campo">
+                <label>Director Tecnico</label>
+                <input class="input-text" type="text" placeholder="Nombre del representante" />
+              </div>
+
+              <div class="campo">
+                <label>Telefono</label>
+                <input class="input-text" type="tel" placeholder="Telefono del representante" />
+              </div>
+
+              <div class="campo">
+                <label>Correo</label>
+                <input class="input-text" type="email" placeholder="Email del representante" />
+              </div>
+
+              <div class="campo">
+                <label>Contraseña</label>
+                <input class="input-text" type="password" placeholder="Nueva contraseña" />
+              </div>
+            </div><!-- .contenedor-campos -->
+            <div class="alinear-derecha">
+            <input class="boton w-100" type="submit" value="Enviar" />
+        </div>
+          </fieldset>
+        </form>
+      </section>
     </main>
 
-    <footer id="#Derechos">
-      <p>
-        Copyright &copy; 2024 TorneON. Todos los derechos reservados. Todas las
-        marcas registradas pertenecen a sus respectivos dueños en EE. UU. y
-        otros países.<br />
-      </p>
+    <footer class="footer" id="#Derechos">
+      <p>Gerson Jared Villagrana Ponce 22310287 4-O</p>
     </footer>
   </body>
 </html>
