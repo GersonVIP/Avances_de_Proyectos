@@ -144,7 +144,7 @@ h1,h2,h3 {
     background-image: url(../img/Esquina.jpg);
     background-image: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 500px;
     position: relative;
     margin-bottom: 2rem;
 }
