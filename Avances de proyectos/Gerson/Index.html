@@ -15,6 +15,12 @@
     />
     <link rel="preload" href="css/styles_Index.css" as="style" />
     <link rel="stylesheet" href="css/styles_Index.css" />
+    <style>
+      /* Estilo para el cursor personalizado */
+      .balon-cursor {
+        cursor: url("balon.png"), auto;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -23,11 +29,11 @@
 
     <div class="nav-bg">
       <nav class="navegacion-principal contenedor">
-        <a href="/Avances de proyectos/Gerson/Acceder.html">Acceder</a>
-        <a href="/Avances de proyectos/Gerson/Eventos.html">Eventos</a>
+        <a href="/Avances de proyectos/Gerson/html/Acceder.html">Acceder</a>
+        <a href="/Avances de proyectos/Gerson/html/Eventos.html">Eventos</a>
         <a href="#Derechos">Derechos</a>
-        <a href="/Avances de proyectos/Gerson/Blog.html">Blog</a>
-        <a href="/Avances de proyectos/Gerson/Contacto.html">Contacto</a>
+        <a href="/Avances de proyectos/Gerson/html/Blog.html">Blog</a>
+        <a href="/Avances de proyectos/Gerson/html/Contacto.html">Contacto</a>
       </nav>
     </div>
     <!-- .nav-bg -->
@@ -53,11 +59,16 @@
             <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
             <path d="M20.2 20.2l1.8 1.8"></path>
           </svg>
-          Guadalajara, Jalisco
+          Esta servicio solo funciona en Guadalajara, Jalisco
         </p>
-        <a class="boton" href="#">Contactar</a>
-      </div><!-- .contenido-esquina -->
-      
+        <a
+          class="boton"
+          href="https://amateur.fmf.mx/assets/Docs/Reglamentos/Sanciones.pdf"
+          >Reglamento</a
+        ><br>
+        <a id="btnCambiarCursor" class="boton" onclick="cambiarCursor()">Cursor de Balon</a>
+      </div>
+      <!-- .contenido-esquina -->
     </section>
 
     <main class="noticias contenedor sombra">
@@ -80,32 +91,53 @@
             <div class="campos">
               <div class="campo">
                 <label>Nombre</label>
-                <input class="input-text" type="text" placeholder="Del Equipo" />
+                <input
+                  class="input-text"
+                  type="text"
+                  placeholder="Del Equipo"
+                />
               </div>
 
               <div class="campo">
                 <label>Director Tecnico</label>
-                <input class="input-text" type="text" placeholder="Nombre del representante" />
+                <input
+                  class="input-text"
+                  type="text"
+                  placeholder="Nombre del representante"
+                />
               </div>
 
               <div class="campo">
                 <label>Telefono</label>
-                <input class="input-text" type="tel" placeholder="Telefono del representante" />
+                <input
+                  class="input-text"
+                  type="tel"
+                  placeholder="Telefono del representante"
+                />
               </div>
 
               <div class="campo">
                 <label>Correo</label>
-                <input class="input-text" type="email" placeholder="Email del representante" />
+                <input
+                  class="input-text"
+                  type="email"
+                  placeholder="Email del representante"
+                />
               </div>
 
               <div class="campo">
                 <label>Contraseña</label>
-                <input class="input-text" type="password" placeholder="Nueva contraseña" />
+                <input
+                  class="input-text"
+                  type="password"
+                  placeholder="Nueva contraseña"
+                />
               </div>
-            </div><!-- .contenedor-campos -->
+            </div>
+            <!-- .contenedor-campos -->
             <div class="alinear-derecha">
-            <input class="boton w-100" type="submit" value="Enviar" />
-        </div>
+              <input class="boton w-100" type="submit" value="Enviar" />
+            </div>
           </fieldset>
         </form>
       </section>
@@ -114,5 +146,6 @@
     <footer class="footer" id="Derechos">
       <p>Gerson Jared Villagrana Ponce 22310287 4-O</p>
     </footer>
+    <script src="/Avances de proyectos/Gerson/script/funciones.js"></script>
   </body>
 </html>

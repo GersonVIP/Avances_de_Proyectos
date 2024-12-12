@@ -23,3 +23,11 @@
     ventana.document.write(`<p>${fechaHora}</p>`);
     ventana.document.close();
   }
+
+  function cambiarCursor() {
+    document
+    .getElementById("btnCambiarCursor")
+    .addEventListener("click", function () {
+    document.body.classList.toggle("balon-cursor");
+    });
+  }
